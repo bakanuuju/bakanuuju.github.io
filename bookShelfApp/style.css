@@ -142,11 +142,14 @@ h6 {
     border-radius: 10px;
     padding: 30px;
     border: 1px solid black;
-    margin-bottom: 30px;
 }
 
 h2 {
     margin-bottom: 30px;
+}
+
+main {
+    padding-bottom: 50px;
 }
 
 .input {
@@ -180,10 +183,8 @@ input[type='checkbox'] {
     margin-left: 5px;
 }
 
-.bookSubmit {
-    margin-top: 30px;
+.submitButton {
     width: 100%;
-    padding: 10px;
     border-radius: 100vw;
     border: none;
     border: 3px solid var(--clr-primary-500);
@@ -192,9 +193,14 @@ input[type='checkbox'] {
     transition: all 0.2s;
 }
 
-.bookSubmit:hover {
+.submitButton:hover {
     background-color: transparent;
     color: var(--clr-primary-500);
+}
+
+.bookSubmit {
+    padding: 10px;
+    margin-top: 30px;
 }
 
 .bookShelf {
@@ -238,7 +244,7 @@ input[type='checkbox'] {
     align-items: center;
 }
 
-.bookItem h3 {
+h3 {
     font-weight: var(--fw-bold);
     font-size: var(--fs-secondary-heading);
 }
@@ -285,6 +291,29 @@ input[type='checkbox'] {
     background-color: red;
 }
 
+.find {
+    width: 80%;
+    margin: 30px 0;
+    padding: 30px 0;
+    border-top: 2px solid #DDD;
+    border-bottom: 2px solid #DDD;
+    display: flex;
+    flex-direction: column;
+}
+
+#findForm {
+    display: flex;
+    gap: 20px;
+}
+
+#findForm .input {
+    width: 80%;
+}
+
+#findForm button {
+    width: 20%;
+}
+
 @media (max-width: 1300px) {
     .bookShelf {
         flex-direction: column;
@@ -323,6 +352,19 @@ input[type='checkbox'] {
         height: 2.4rem;
         padding: 9px;
     }
+
+    #findForm {
+        flex-direction: column;
+    }
+
+    #findForm .input {
+        width: 100%;
+    }
+
+    #findForm button {
+        width: 100%;
+        padding: 6px 0;
+    }
 }
 
 @media (max-width: 475px) {
@@ -346,4 +388,5 @@ input[type='checkbox'] {
         height: 2.2rem;
         padding: 7px;
     }
+
 }
